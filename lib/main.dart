@@ -22,6 +22,9 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
+      routes: {
+        '': (context)=> NewRoute(),
+      },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
