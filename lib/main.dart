@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'newRoute.dart';
+import 'routerTestRoute.dart';
 
 void main() => runApp(MyApp());
 
@@ -106,6 +107,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(context, 
                   MaterialPageRoute(builder: (context){
                     return NewRoute();
+                  })
+                );
+              },
+            ),
+            FlatButton(
+              child: Text('open new route has params'),
+              color: Colors.blue,
+              onPressed: (){
+                Navigator.push(context, 
+                  MaterialPageRoute(builder: (context){
+                    return RouterTestRoute();
                   })
                 );
               },
